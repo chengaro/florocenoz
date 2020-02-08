@@ -1,0 +1,220 @@
+html, body
+  width: 100vw
+  height: 100vh
+  padding: 0
+  margin: 0
+
+
+body 
+  overflow: hidden
+  cursor: default
+  background: #000 
+  
+
+.preloader
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 250px
+  height: 250px
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  +r(767)
+    width: 150px
+    height: 150px
+  &-text
+    color: #fff
+    margin: 10px auto
+    text-align: center
+    font-family: 'Arial', sans-serif
+    font-size: 20px
+    letter-spacing: 6px
+    +r(767)
+      font-size: 16px
+      letter-spacing: 2px
+  .box
+    margin: 16.66667px
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background: linear-gradient(130deg, #ce9ffc 0%, #7367f0 100%)
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3)
+    animation: pulse 1s linear infinite alternate
+    +r(767)
+      width: 30px !important
+      height: 30px !important
+      margin: 10px
+    &:nth-child(1)
+      animation-delay: 0.1s
+    &:nth-child(2) 
+      animation-delay: 0.1s
+    &:nth-child(3) 
+      animation-delay: 0.2s
+    &:nth-child(4) 
+      animation-delay: 0.3s
+    &:nth-child(5) 
+      animation-delay: 0.4s
+    &:nth-child(6) 
+      animation-delay: 0.5s
+    &:nth-child(7) 
+      animation-delay: 0.6s
+    &:nth-child(8) 
+      animation-delay: 0.7s
+    &:nth-child(9) 
+      animation-delay: 0.8s
+
+@keyframes pulse
+  from, 40%
+    opacity: 0
+  50%
+    opacity: 0.5
+  80%, to
+    opacity: 1   
+    
+
+.canvas
+  position: absolute
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  overflow: hidden
+  
+
+.mask
+  position: absolute
+  content: ''
+  top: 0
+  left: 0
+  width: 43vw
+  height: 100vh 
+  overflow: hidden
+  opacity: 0  
+  display: none
+  +r(767)
+    width: 100%
+  +r(992)
+    width: 65% 
+.mask-0
+  background: #A1ADC5
+  mix-blend-mode: multiply 
+.mask-1
+  background: #113272
+  mix-blend-mode: hard-light 
+.mask-2
+  background: #153D8A
+  mix-blend-mode: multiply 
+.mask-3
+  background: #153D8A
+  mix-blend-mode: multiply 
+.mask-4
+  background: #153D8A
+  mix-blend-mode: multiply 
+.mask-5
+  background: #153D8A
+  mix-blend-mode: multiply 
+.mask-6
+  background: #153D8A
+  mix-blend-mode: multiply 
+.mask-7
+  background: #1A3364
+  mix-blend-mode: hard-light 
+.mask-8
+  background: #999999
+  mix-blend-mode: multiply   
+
+.strip
+  overflow: hidden
+  position: absolute
+  top: -100px
+  left: 0
+  width: 100%
+  height: 100px
+.strip-1  
+  background: #113272 
+  mix-blend-mode: hard-light
+  
+
+.index
+  position: absolute
+  top: 50%    
+  right: 15px
+  transform: translate(0, -50%)
+  z-index: 100
+  cursor: pointer
+  pointer-events: auto
+  opacity: 0
+  z-index: 100
+  +ropa
+  font-size: 270px
+  line-height: 1
+  font-weight: 400
+  letter-spacing: -0.05em
+  +r(767)
+    pointer-events: none
+    font-size: 120px   
+  
+
+.section 
+  position: absolute
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  overflow: hidden
+  opacity: 0
+  z-index: 0
+  margin: 0
+  padding: 0
+  display: flex
+  align-items: center
+  .wrapper
+    width: 46%
+    padding-left: 10%
+    +r(992)
+      width: 65%        
+    +r(767)
+      width: 100%
+      padding: 60px 20px 40px 20px
+  
+
+
+
+  
+
+  // .strip-2
+  
+
+ 
+  //   background: #1B579B 
+  //   mix-blend-mode: normal  
+  // .strip-3
+  //   background: #001D67
+  //   mix-blend-mode: normal  
+    
+
+
+    
+
+.yellow
+  color: #FCE410 !important  
+  
+br
+  +r(767)
+    display: none      
+    
+.sm-hidden
+  +r(767)
+    display: none !important
+    
+.mb-0
+  margin-bottom: 0 !important  
+  
+.pl-1
+  padding-left: 1em
+  +r(767)
+    padding-left: 0    

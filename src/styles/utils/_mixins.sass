@@ -1,0 +1,28 @@
+/* CENTERING */
+=centered
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+
+// font-family 
+=font($alias, $name)
+  @font-face
+    font-family: $alias
+    src: url("./fonts/" + $name + ".woff2") format("woff2"), url("./fonts/" + $name + ".woff") format("woff")
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+    
+
+// width
+=r($width)
+  @media only screen and (max-width: $width+ "px")
+    @content
+
+
+// height
+=rh($height)
+  @media only screen and (max-height: $height + "px")
+    @content        
