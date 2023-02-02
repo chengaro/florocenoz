@@ -7,11 +7,11 @@
     font-size: 26px
     line-height: 1
     margin-bottom: 25px
-  
+
 .subtitle
   font-size: 33px
-  font-weight: 400  
-  margin-bottom: 30px 
+  font-weight: 400
+  margin-bottom: 30px
   +r(767)
     font-size: 22px
     margin-bottom: 10px
@@ -19,8 +19,8 @@
 .text
   font-size: 23px
   +r(767)
-    font-size: 17px  
-    
+    font-size: 17px
+
 .problem-name
   font-size: 26px
   line-height: 1
@@ -40,13 +40,13 @@
     border-radius: 50%
     z-index: -1
     transform: translate(0, -50%)
-    background: url("./images/circle.png") no-repeat center center
+    background: url("./assets/circle.png") no-repeat center center
     background-size: 150px 150px
     +r(767)
       width: 100px
       height: 100px
-      background-size: 100px 100px 
-      
+      background-size: 100px 100px
+
 .circle
   position: relative
   &:before
@@ -59,12 +59,12 @@
     border-radius: 50%
     z-index: -1
     transform: translate(0, -50%)
-    background: url("./images/circle.png") no-repeat center center
+    background: url("./assets/circle.png") no-repeat center center
     background-size: 150px 150px
     +r(767)
       width: 100px
       height: 100px
-      background-size: 100px 100px 
+      background-size: 100px 100px
 
 .info
   font-size: 19px
@@ -81,19 +81,17 @@
     content: ''
     width: 36px
     height: 36px
-    background: url('./images/sprite.svg#icon-university') no-repeat 0 0
+    background: url('./assets/sprite.svg#icon-university') no-repeat 0 0
     +r(767)
       left: -38px
       width: 30px
-      height: 30px  
+      height: 30px
 
-  
 .section[data-slide="0"]
   .info
     margin-top: 130px
     +r(767)
       margin-top: 40px
-    
 
 .section[data-slide="1"]
   .text
@@ -103,7 +101,7 @@
     +r(767)
       font-size: 20px
       margin-top: 15px
-      margin-bottom: 5px  
+      margin-bottom: 5px
   li
     font-size: 18px
     font-weight: 300
@@ -116,7 +114,7 @@
     &:before
       content: ''
       position: absolute
-      background: url("./images/list.png") no-repeat center center
+      background: url("./assets/list.png") no-repeat center center
       background-size: 60px
       border-radius: 50%
       width: 150px
@@ -130,16 +128,15 @@
         background-size: 40px
         transform: translate(-40px, -50%)
     &:hover
-      color: #A7E5FF 
+      color: #A7E5FF
       &:before
-        background: url("./images/list.png") no-repeat center center, url("./images/circle.png") no-repeat center center
-        background-size: 60px, 150px 150px  
+        background: url("./assets/list.png") no-repeat center center, url("./assets/circle.png") no-repeat center center
+        background-size: 60px, 150px 150px
         +r(767)
           background-size: 40px, 100px 100px
-    
 
 .section[data-slide="2"]
-  background: url("./images/dots1.png") no-repeat center 5%
+  background: url("./assets/dots1.png") no-repeat center 5%
   background-size: 95% auto
   table
     font-size: 23px
@@ -156,35 +153,30 @@
       top: 0
       left: 0
 
-    
-
 .section[data-slide="3"]
-  background: url("./images/dots2.png") no-repeat center 5%
-  background-size: 95% auto   
+  background: url("./assets/dots2.png") no-repeat center 5%
+  background-size: 95% auto
   .problem-name:before
-    left: auto 
+    left: auto
     right: 0
-      
 
 .section[data-slide="4"]
-  background: url("./images/dots3.png") no-repeat center 5%
-  background-size: 95% auto 
+  background: url("./assets/dots3.png") no-repeat center 5%
+  background-size: 95% auto
   .text
     margin-bottom: 12px
     +r(767)
       margin-bottom: 5px
-      
 
 .section[data-slide="5"]
-  background: url("./images/dots4.png") no-repeat center 5%
+  background: url("./assets/dots4.png") no-repeat center 5%
   background-size: 95% auto
   .text
     margin-bottom: 12px
 
-
 .section[data-slide="6"]
-  background: url("./images/dots5.png") no-repeat center 5%
-  background-size: 95% auto 
+  background: url("./assets/dots5.png") no-repeat center 5%
+  background-size: 95% auto
   .problem-name:before
     left: 45%
   .text
@@ -198,20 +190,20 @@
       content: '\2014'
       top: 0
       left: 0
-      
+
 .section[data-slide="7"]
   .title
-    color: #FFF 
+    color: #FFF
     line-height: 1.1
     +r(767)
       margin-bottom: 10px
   .subtitle
     +r(767)
       font-size: 20px
-      margin-bottom: 0  
-  .smaller  
-    font-size: 30px 
-    padding-left: 3em           
+      margin-bottom: 0
+  .smaller
+    font-size: 30px
+    padding-left: 3em
     +r(767)
       font-size: 22px
       padding-left: 0
@@ -222,7 +214,7 @@
   .block-2
     margin-top: 10px
     margin-bottom: 10px
-    padding-left: 2em 
+    padding-left: 2em
     +r(767)
       margin-top: 0
       margin-bottom: 0
@@ -238,7 +230,7 @@
   border-radius: 2em
   text-decoration: none
   font-size: 22px
-  color: #FFF 
+  color: #FFF
   position: relative
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)
   margin-top: 70px
@@ -264,8 +256,7 @@
   &:hover
     &:before
       width: 100%
-      left: 0      
-
+      left: 0
 
 // .link
 //   color: #FFF

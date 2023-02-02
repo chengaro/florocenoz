@@ -11,17 +11,17 @@ window.addEventListener('DOMContentLoaded', () => {
   let slidesCount = 9;
 
   function getScreenWidth() {
-    if (isMobile.apple.device) {
-      return window.orientation === 0 ? screen.width : screen.height;
-    }
+    // if (isMobile.apple.device) {
+    //   return window.orientation === 0 ? screen.width : screen.height;
+    // }
     return window.innerWidth;
   }
 
 
   function getScreenHeight() {
-    if (isMobile.apple.device) {
-      return window.orientation === 0 ? screen.height : screen.width;
-    }
+    // if (isMobile.apple.device) {
+    //   return window.orientation === 0 ? screen.height : screen.width;
+    // }
     return window.innerHeight;
   }
 
